@@ -80,14 +80,18 @@ const Sidebar = () => {
             <span>Settings</span>
           </li>
           <p className="title">USER</p>
-          <li>
-            <AccountCircleIcon className="icon" />
-            <span>Profile</span>
-          </li>
-          <li>
-            <LogoutIcon className="icon" />
-            <span>Logout</span>
-          </li>
+          <Link to="login">
+            <li>
+              <AccountCircleIcon className="icon" />
+              <span>Profile</span>
+            </li>
+          </Link>
+          <Link to="login">
+            <li>
+              <LogoutIcon className="icon" />
+              <span>Logout</span>
+            </li>
+          </Link>
         </ul>
       </div>
       <div className="bottom">
